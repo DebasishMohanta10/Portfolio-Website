@@ -1,0 +1,40 @@
+<% provide(:title,"Welcome") %>
+<div class="row">
+  <div class="center">
+      <div id="home" class="center">
+          <br>
+          <br>
+          <br>
+          <%= image_tag "debasish3.jpg",:class => "responsive-img circle welcome_image" %>
+          <h3 class="deep-purple-text animate__animated animate__fadeInLeft" style="font-weight: 800;">Debasish Mohanta</h3>
+          <p style="font-size: 30px; font-weight: 600;" class="green-text text-accent-4 animate__animated animate__fadeInRight">I love <span style="display:inline-block;background-color: #B388FF;"><strong style="color: #000;">development</strong></span>.</p>
+          <div style="font-size: 20px;" class="social-links animate__animated animate__fadeInUp">
+            <a class="blue-text" href="https://www.facebook.com/debasish.mohanta.52206" target="_blank" style="margin: 5px;"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/debasish__mohanta/" class="black-text" target="_blank" style="margin: 5px;"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/debasishmohanta/" class="black-text" target="_blank" style="margin: 5px;"><i class="bi bi-linkedin"></i></a>
+            <a href="" class="blue-text" target="_blank" style="margin: 5px;"><i class="bi bi-twitter"></i></a>
+
+          </div>
+          <br>
+          <a href="#" class="btn waves-effect waves-light animate__animated animate__fadeInUp" style="font-weight: bold;">Download CV</a>
+      </div>
+  </div>
+</div>
+<br>
+
+
+
+<script type="text/javascript">
+  var arr = ["design", "illustration", "development", "coding", ];
+  var i = 0;
+
+  function changeText(){
+  if (i != arr.length){
+    $("strong").text(arr[i]);
+  i++;}
+  else {
+    i=0;
+    $("strong").text(arr[i])}};
+
+  var t = setInterval(changeText, 500);
+</script>

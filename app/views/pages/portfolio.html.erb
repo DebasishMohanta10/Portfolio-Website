@@ -1,0 +1,200 @@
+<% provide(:title,"My Portfolio") %>
+<style media="screen">
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Controls
+---------------------------------------------------------------------- */
+
+
+.control {
+    position: relative;
+}
+
+
+
+
+
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+    text-align: justify;
+}
+
+.container:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+@media screen and (min-width: 541px) {
+  .mix,
+  .gap {
+      width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+  }
+}
+
+/* 3 Columns */
+
+@media screen and (min-width: 768px) {
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
+}
+
+
+</style>
+<div class="section">
+            <h3 class="center black-text" style="font-weight: 900;">My <span class="yellow-text">Portfolio</span></h3>
+            <div class="divider red" style="width:100px;margin:0 auto;"></div>
+        </div>
+        <div class="controls center section">
+            <button type="button" class="control btn" data-filter="all">All</button>
+            <button type="button" class="control btn" data-filter=".html">HTML/CSS</button>
+            <button type="button" class="control btn" data-filter=".vue">Vue</button>
+            <button type="button" class="control btn" data-filter=".javascript">JavaScript</button>
+            <button type="button" class="control btn" data-filter=".jquery">jQuery</button>
+            <button type="button" class="control btn" data-filter=".rails">Rails</button>
+        </div>
+
+        <div class="container section" width="90%">
+            <div class="mix html">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html javascript">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html jquery rails">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html jquery">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html javascript">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html jquery rails">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html javascript">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html vue">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <%= image_tag "beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky.jpg", :class => "responsive-img" %>
+                    </div>
+                    <div class="card-content center black-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, at!</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+        </div>

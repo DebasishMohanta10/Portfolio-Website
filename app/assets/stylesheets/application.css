@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* Sidenav for Desktop */
+header, main, footer, nav {padding-left: 300px;}
+@media only screen and (max-width : 992px) {header, main, footer, nav {padding-left: 0;}}
+
+#home {
+    line-height: 150%;
+}
+li{
+    font-weight: bold;
+}
+
+.parallax-container{
+    height: 500px;
+}
+
+
+.main{
+    background-color: #EEF1FF;
+}
+
+
+
+.links{
+            width: 0;
+            height: 0;
+            bottom: 0px;
+            left:0;
+            border-top: 100px solid transparent;
+            border-left:  50vw solid #fff;
+            border-bottom: 0px solid transparent;
+            position: absolute;
+        }
+        .rechts{
+            width: 0;
+            height: 0;
+            bottom: 0px;
+            right:0;
+            border-top: 100px solid transparent;
+            border-right: 50vw solid #fff;
+            border-bottom: 0px solid transparent;
+            position: absolute;
+        }
+
+
+        .event {
+
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            }
+
+            .event .content {
+            background: rgba(93,67,27, 1);
+            color: #fff;
+            bottom: 0;
+            height: 68px;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            transition: all .5s ease;
+            width: 100%;
+            }
+
+            .event h3 {
+            font: bold 1em/1.125em 'Montserrat', Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            height: 68px;
+            margin: 0;
+            padding-top: 20px;
+            text-transform: uppercase;
+            }
+
+            .event .rollover {
+            border-top: 1px solid #59E4DF;
+            font-size: .9375em;
+            line-height: 1.4em;
+            padding: 18px 20px;
+            opacity: 0;
+            transition: all .5s ease;
+            }
+
+            .event .rollover p {
+            margin: 0;
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            }
+
+            .event:hover .content {
+            background: rgba(93,67,27,.7);
+            height: 100%;
+            }
+
+            .event:hover .rollover {
+            opacity: 1;
+            }
+
+.contact-form{
+  width: 80%;
+}
+
+.ribbon {
+    position: absolute;
+    right: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px;
+    text-align: right;
+  }
+  .ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; right: -21px;
+  }
+  .ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #79A70A;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+  }
+  .ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #79A70A;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79A70A;
+  }
