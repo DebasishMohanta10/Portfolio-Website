@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get '/welcome',to: "pages#home",as: "welcome"
   get '/about',to: "pages#about",as: "about"
   get '/contact',to: "pages#contact",as: "contact"
-  get '/skills',to: "pages#technical",as: "skills"
+  get '/technical',to: "pages#technical",as: "technical"
   get '/portfolio',to: "pages#portfolio",as: "portfolio"
   get '/album',to: "pages#album",as: "album"
   get '/blog',to: "pages#blog", as: "blog"
